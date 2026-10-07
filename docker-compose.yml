@@ -1,0 +1,8 @@
+services:
+  clinical-risk:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - FERRITE_ENV=demo
+    restart: unless-stopped

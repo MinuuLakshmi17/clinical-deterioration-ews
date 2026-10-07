@@ -1,0 +1,130 @@
+{
+  "model_name": "Calibrated HistGradientBoosting early-warning model",
+  "version": "1.0.0",
+  "horizon_hours": 6,
+  "features": [
+    "age",
+    "comorbidity_burden",
+    "heart_rate",
+    "sbp",
+    "dbp",
+    "resp_rate",
+    "spo2",
+    "temperature",
+    "lactate",
+    "wbc",
+    "creatinine",
+    "oxygen_flow",
+    "map",
+    "shock_index",
+    "oxygenation_gap",
+    "missing_count",
+    "heart_rate_delta1h",
+    "heart_rate_delta3h",
+    "heart_rate_roll3h_mean",
+    "sbp_delta1h",
+    "sbp_delta3h",
+    "sbp_roll3h_mean",
+    "dbp_delta1h",
+    "dbp_delta3h",
+    "dbp_roll3h_mean",
+    "resp_rate_delta1h",
+    "resp_rate_delta3h",
+    "resp_rate_roll3h_mean",
+    "spo2_delta1h",
+    "spo2_delta3h",
+    "spo2_roll3h_mean",
+    "temperature_delta1h",
+    "temperature_delta3h",
+    "temperature_roll3h_mean",
+    "lactate_delta1h",
+    "lactate_delta3h",
+    "lactate_roll3h_mean",
+    "wbc_delta1h",
+    "wbc_delta3h",
+    "wbc_roll3h_mean",
+    "creatinine_delta1h",
+    "creatinine_delta3h",
+    "creatinine_roll3h_mean",
+    "oxygen_flow_delta1h",
+    "oxygen_flow_delta3h",
+    "oxygen_flow_roll3h_mean"
+  ],
+  "metrics": {
+    "roc_auc": 0.6493397646414888,
+    "pr_auc": 0.12905826027399983,
+    "brier_score": 0.055621474788652335,
+    "expected_calibration_error": 0.02405320795409575,
+    "positive_rate_test": 0.06018518518518518
+  },
+  "training_rows": 6048,
+  "patients": 240,
+  "trained_at": "2026-10-07T01:53:32.978703+00:00",
+  "split": {
+    "train_patients": 168,
+    "test_patients": 72
+  },
+  "global_importance": [
+    {
+      "feature": "spo2_roll3h_mean",
+      "importance": 0.04327923034819581
+    },
+    {
+      "feature": "dbp_roll3h_mean",
+      "importance": 0.020777809355395572
+    },
+    {
+      "feature": "temperature_roll3h_mean",
+      "importance": 0.01428229337712097
+    },
+    {
+      "feature": "spo2_delta3h",
+      "importance": 0.00843306597616944
+    },
+    {
+      "feature": "wbc_delta3h",
+      "importance": 0.007198644267609788
+    },
+    {
+      "feature": "resp_rate_roll3h_mean",
+      "importance": 0.005545292829775628
+    },
+    {
+      "feature": "resp_rate_delta3h",
+      "importance": 0.005026893604479765
+    },
+    {
+      "feature": "spo2",
+      "importance": 0.00465927750410502
+    },
+    {
+      "feature": "map",
+      "importance": 0.004350343143446555
+    },
+    {
+      "feature": "wbc_roll3h_mean",
+      "importance": 0.0042735042735043026
+    },
+    {
+      "feature": "wbc",
+      "importance": 0.004248505326091534
+    },
+    {
+      "feature": "creatinine_delta3h",
+      "importance": 0.004101669403393538
+    },
+    {
+      "feature": "lactate",
+      "importance": 0.0039006252368321446
+    },
+    {
+      "feature": "temperature",
+      "importance": 0.0031959180666076836
+    },
+    {
+      "feature": "heart_rate_delta3h",
+      "importance": 0.0030625026314681668
+    }
+  ],
+  "data_source": "synthetic educational cohort; no real patient data"
+}
